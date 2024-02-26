@@ -1,0 +1,24 @@
+{
+ "prices": [
+  {
+   "name": "Essential",
+   "cost": 80,
+   "amount": 500
+  },
+  {
+   "name": "Standard",
+   "cost": 150,
+   "amount": 1000
+  },
+  {
+   "name": "Premium",
+   "cost": 250,
+   "amount": 2000
+  },
+  {
+   "name": "Professional",
+   "cost": 420,
+   "amount": 4000
+  }
+ ]
+}
