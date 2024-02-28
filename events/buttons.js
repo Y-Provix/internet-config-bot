@@ -4,10 +4,13 @@ const {
   ButtonStyle,
   ActionRowBuilder,
 } = require("discord.js");
-const { EventBuilder } = require("handler.djs");
+const { EventBuilder, Interaction } = require("handler.djs");
 const { createEmbed, createButton } = require("../modules");
-
 require("dotenv").config();
+
+/**
+ * @param { Interaction } interaction
+ */
 
 module.exports = new EventBuilder()
   .setEvent("ButtonClick")
@@ -99,7 +102,7 @@ async function Execute(interaction) {
   }
 
   // Delete
-  if (interaction.customId === 'deleteChannel') interaction.channel.delete();
+  if (interaction.customId === 'deleteChannel' && interaction.member.roles.cache.has("1210312165211246624")) interaction.channel.delete();
 
   // Steps (PC)
   if (interaction.customId === "stepsPC") {

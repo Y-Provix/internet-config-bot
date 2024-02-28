@@ -36,7 +36,6 @@ async function messageExecute(message) {
 
   // prices
   let prices = db.get("prices");
-  console.log(prices);
   let findPrices = prices.find((el) => el.name === args[1]);
   if (findPrices) {
     findPrices = findPrices.cost = parseFloat(args[2]);

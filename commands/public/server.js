@@ -15,7 +15,6 @@ module.exports = new CommandBuilder()
  */
 
 async function Excute(message) {
-  console.log(message);
   const guild = message.guild;
 
   const name = guild.name;
